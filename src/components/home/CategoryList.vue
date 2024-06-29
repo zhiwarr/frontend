@@ -1,7 +1,7 @@
 <template>
   <!-- category start -->
   <section class="category-section top-space">
-    <ul class="category-slide mx-3">
+    <ul class="category-slide">
       <li v-for="category in props.categories" :key="category.id">
         <router-link
           :to="{ name: 'category-product', query: { category: category.slug } }"
